@@ -1,0 +1,6 @@
+pip install streamlit PyPDF2 langchain python-dotenv faiss-cpu openai huggingface_hub 
+pip install langchain==0.1.2 sentence_transformers==2.2.2       
+pip install langchain_google_genai  
+>pip install google-generativeai  
+pip install -U langchain-community 
+pip install langchain[all]  
