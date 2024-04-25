@@ -77,14 +77,15 @@ def main():
     st.set_page_config(page_title="Project work based on Query PDF",page_icon=":books:")
     st.header("Project work based on Query PDF")
     user_question = st.text_input("Ask a Question from the PDF Files")
+    if user_question:
+            user_input(user_question)
     
     with st.sidebar:
         st.subheader("Upload the PDF")
         pdfdoc=st.file_uploader("upload your PDF here and Click on the process",accept_multiple_files=True)
         
 
-        if user_question:
-            user_input(user_question)
+        
         if st.button("Process"):
            with st.spinner("Processing"):
                
